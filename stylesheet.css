@@ -1,6 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
-    font-family: 'Roboto', sans-serif;}
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
 
 .part1{
     background-color: #1F2937;
@@ -16,6 +26,17 @@ body{
 .header-body-right{
     width: 70%;
     max-width: 100%;
+    position:relative;
+}
+
+.header-body-right img{
+    transition: transform 0.3s ease; /* Smooth transition */
+
+}
+
+.header-body-right:hover img{
+    transform: scale(1.2); /* Scale image to 200% on hover */
+    z-index: 1;
 }
 
 .header-body-left{
@@ -49,13 +70,9 @@ h1{
     border-radius: 8%;
     margin-top: 1%;
     margin-bottom: 1%;
+    border-radius: 8%;
+    border: 5px solid rgb(94, 94, 94);
 }
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .links{
     display: flex;
     gap: 16px;
@@ -76,60 +93,92 @@ a {
 }
 
 #btn-1{
-    background-color: #0165fc;
+    background-color: #3882F6;
     border-style: none;
-    padding: 8px 16px;
+    padding: 10px 20px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 15px;
     font-weight: bold;
     color: white;
-    border-color: black;
-    border-style:groove;
-    
 }
 
-.ss-img{
-    width: 300px;
+
+h2{
+    font-size: 36px;
+    margin-top: 1%;
+    font-weight: 900;
+    margin-bottom: 1%;
+    color: #1F2937;
+
 }
 
-.screenshots{
+.allpics{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
     text-align: center;
-    font-family: sans-serif;
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(94, 94, 94);
 }
 
-.samurai-quote{
+.firstpic, .secondpic, .thirdpic, .fourthpic {
+    width: 15%;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.firstpic img, .secondpic img, .thirdpic img, .fourthpic img {
+    width: 95%;
+    height: 80%;
+    object-fit: cover; 
+    border-radius: 8%;
+    border: 5px solid rgb(94, 94, 94);
+    transition: transform 0.3s ease;
+}
+
+.firstpic:hover img, .secondpic:hover img, .thirdpic:hover img, .fourthpic:hover img {
+    transform: scale(1.7);
+    z-index: 1;
+}
+
+
+.myquote {
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 200px;
-    margin-top: 30px;
-    padding: 20px 180px;
+    align-items: center; 
+    padding: 20px;
+    margin: 30px auto; 
+    max-width: 100%; 
+    box-sizing: border-box; 
 }
 
-.quote{
-    font-size: 24px;
+.quote {
+    font-size: 28px;
+    text-align: center; 
+    font-style: italic;
+    color: #1F2937;
+    margin: 10px 0;
 }
 
-.author{
+.author {
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
+    text-align: right; 
+    width: 100%;
+    padding-right: 15%;
 }
 
-.part-4{
+.part3{
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 40px;
 }
 
 .footer{
@@ -140,8 +189,8 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 60px;
-    border-radius: 6px;
+    padding: 10px 40px;
+    border-radius: 20px;
 }
 
 .footer-text{
@@ -153,21 +202,21 @@ a {
     font-weight: bolder;
 }
 
-.para{
+.lasttext{
     font-family: sans-serif;
 }
 
-#btn-2{
+#button2{
     color: white;
     font-weight: bold;
     background-color: #3882F6; 
-    border: 2px solid white;   
+    border: 3px solid white;   
     cursor: pointer;
     padding: 8px 16px;
+    border-radius: 20px;
 }
 
-
-.part-5{
+.part4{
     background-color: #1F2937;
     padding: 30px 0px;
 }
